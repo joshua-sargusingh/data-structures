@@ -1,15 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define SIZE 100
+
 struct Queue {
-    int items[100];
+    int items[SIZE];
     int front, back;
     int count;
 };
 
 void enqueue (struct Queue* queue, int value) {
     //error check
-    if (queue->count == 100) {
+    if (queue->count == SIZE) {
         printf("Queue overflow! Cannot enqueue element %d\n", value);
         return;
     }
@@ -20,7 +22,7 @@ void enqueue (struct Queue* queue, int value) {
     }
 
     //logic
-    queue->back = (queue->back + 1) % 100;//ensures wrapping (101 % 100 = 1)
+    queue->back = (queue->back + 1) % 100;//ensures wrapping (100 % 100 = 0)
     queue->items[queue->back] = value;
     queue->count++;
 }
