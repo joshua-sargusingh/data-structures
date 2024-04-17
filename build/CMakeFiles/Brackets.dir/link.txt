@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/Brackets.dir/Brackets.c.o -o Brackets 

@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/Remove2.dir/Remove2.c.o -o Remove2 

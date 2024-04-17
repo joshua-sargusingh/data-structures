@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/Codingninjas.dir/Codingninjas.c.o -o Codingninjas 

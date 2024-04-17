@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/Heaptree.dir/Heaptree.c.o -o Heaptree 

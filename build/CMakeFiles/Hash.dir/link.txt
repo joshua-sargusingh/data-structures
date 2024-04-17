@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/Hash.dir/Hash.c.o -o Hash 

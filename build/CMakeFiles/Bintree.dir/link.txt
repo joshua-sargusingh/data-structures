@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/Bintree.dir/Bintree.c.o -o Bintree 
