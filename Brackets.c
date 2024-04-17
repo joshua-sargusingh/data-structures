@@ -54,25 +54,26 @@ int main() {
     //push first element
     push(&stack,str[0]);
 
-    for (int j = 1; str[j] != '\0'; ++j) {
-        //declare
-        char prev = pop(&stack);
+for (int j = 1;str[j] != '\0';++j) {
+
         char curr = str[j];
 
-        //logic
-        if ((prev == '[' && curr == ']') ||
-            (prev == '(' && curr == ')') ||
-            (prev == '{' && curr == '}')) {
-            push(&stack, str[j+1]);
-            ++j;
-
-        } else {
-            printf("false\n");
-            exit(1);
+        // Ignore words and only process symbols
+        if (curr == '[' || curr == '(' || curr == '{') {
+            push(&stack, curr);
+        } else if (curr == ']' || curr == ')' || curr == '}') {
+            char prev = pop(&stack);
+            if ((prev == '[' && curr == ']') ||
+                (prev == '(' && curr == ')') ||
+                (prev == '{' && curr == '}')) {
+                // Brackets match, continue processing
+            } else {
+                // Brackets do not match, exit with an error
+                printf("Error: Bracket mismatch\n");
+                exit(EXIT_FAILURE);
+            }
         }
-
-        prev = curr;
-   }
+    }
 
     // Check if stack is empty after processing the string
     if (stack.top == 0) {

@@ -1,14 +1,16 @@
 #include <stdio.h>
 
+#define SIZE 100  
+
 //define DS
 struct Stack {
-    int items[100];
+    int items[SIZE];
     int top;
 };
 
 void push(struct Stack *stack, int value) {
     //error check for stack overflow
-    if (stack->top == 99) {
+    if (stack->top == SIZE-1) {
         printf("stack overflow\n");
         return;
     }
