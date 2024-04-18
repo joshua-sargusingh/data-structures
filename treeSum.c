@@ -40,19 +40,13 @@ struct treeNode* insertNode(struct treeNode* root, int data) {
     return root;
 };
 
-int sumTree(struct treeNode* root) {
-    //BASE
-    if (root == NULL) {
-        return 0;
+void sumTree(struct treeNode* root, int* sum) {
+    if (root != NULL) {
+        sumTree(root->left, sum); // Traverse left subtree
+        *sum += root->data; // Add current node's data to sum
+        sumTree(root->right, sum); // Traverse right subtree
     }
-
-    int sum = root->data;
-
-    sum += sumTree(root->left);
-    sum += sumTree(root->right);
-    
-    return sum;
-};
+}
 
 int heightTree(struct treeNode* root) {
     //BASE
@@ -60,15 +54,13 @@ int heightTree(struct treeNode* root) {
         return -1;
     }
 
-    printf("%d ",root->data);
+    //printf("%d ",root->data);
 
     int leftHeight = heightTree(root->left);
     int rightHeight = heightTree(root->right);
-
-    printf("\n");
-    printf("left: %d\n",leftHeight);
-    printf("right: %d\n",rightHeight);
-
+    //printf("\n");
+    //printf("left: %d\n",leftHeight);
+    //printf("right: %d\n",rightHeight);
     int height;
 
     if (leftHeight>rightHeight) {
@@ -77,7 +69,7 @@ int heightTree(struct treeNode* root) {
         height = rightHeight+1;
     }
 
-    printf("height %d\n",height);
+    //printf("height %d\n",height);
 
     return height;
 };
@@ -129,7 +121,8 @@ int main() {
     printf("\n");
     
     //sum
-    int sum = sumTree(root);
+    int sum = 0;
+    sumTree(root, &sum);
     printf("Sum: %d\n", sum);
 
     //height

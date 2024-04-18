@@ -80,10 +80,10 @@ int main() {
     root->left->right->left = createNode(14);
 
     //HEAP?
-    if (isMinHeap(root)) {
-        printf("Given binary tree is a Min Heap\n");
-    } else if (isMaxHeap(root)) {
+    if (isMaxHeap(root)) {
         printf("Given binary tree is a Max Heap\n");
+    } else if (isMinHeap(root)) {
+        printf("Given binary tree is a Min Heap\n");
     } else {
         printf("Given binary tree is not a Heap\n");
     }

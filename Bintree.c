@@ -26,21 +26,21 @@ struct treeNode * createNode(int data) {
     return newNode;
 };
 
-struct treeNode* insertNode(struct treeNode* root, int data) {
+struct treeNode* insertNode(struct treeNode* node, int data) {
     //BASE CASE
-    if (root == NULL) {
+    if (node == NULL) {
         return createNode(data);
     }
 
     //Recursive Operation
-    if (data < root->data) {
-        root->left = insertNode(root->left, data);
-    } else if (data > root->data) {
-        root->right = insertNode(root->right, data);
+    if (data < node->data) {
+        node->left = insertNode(node->left, data);
+    } else if (data > node->data) {
+        node->right = insertNode(node->right, data);
     }
 
     //return
-    return root;
+    return node;
 };
 
 void traverseTree(struct treeNode* root) {
@@ -85,6 +85,14 @@ struct treeNode* searchTree(struct treeNode* root, int key) {
     return NULL;
 };
 
+void freeTree(struct treeNode* root) {
+    if (root != NULL) {
+        freeTree(root->left);
+        freeTree(root->right);
+        free(root);
+    }
+}
+
 int main() {
     //create
     //struct TreeNode* root = NULL;
@@ -112,6 +120,9 @@ int main() {
     } else {
         printf("key found\n");
     }
+
+    // Free memory
+    freeTree(root);
     
     return 0;
 }
