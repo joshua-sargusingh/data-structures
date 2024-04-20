@@ -38,6 +38,7 @@ struct hashTable* initHashTable(int size) {
     
     hashTable -> size = size;
 
+    //calloc is a function in C that allocates a block of memory for an array of elements and initializes all the memory to zero.
     hashTable->buckets = (struct Node **)calloc(size, sizeof(struct Node *));
     
     if (hashTable->buckets == NULL) {
