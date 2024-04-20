@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/treeSum.dir/treeSum.c.o -o treeSum 
