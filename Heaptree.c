@@ -12,7 +12,7 @@ struct Node* createNode(int data) {
 
     //error
     if (node == NULL) {
-        printf("Memory Allocatiuon Failed");
+        printf("Memory Allocation Failed");
     }
 
     node->left = NULL;
