@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/joshua/c/Bintree.c" "CMakeFiles/Bintree.dir/Bintree.c.o" "gcc" "CMakeFiles/Bintree.dir/Bintree.c.o.d"
+  "/home/joshua/data_structures/Bintree.c" "CMakeFiles/Bintree.dir/Bintree.c.o" "gcc" "CMakeFiles/Bintree.dir/Bintree.c.o.d"
   )
 
 # Targets to which this target links.

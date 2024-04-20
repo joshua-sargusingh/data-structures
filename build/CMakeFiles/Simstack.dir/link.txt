@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/Simstack.dir/Simstack.c.o -o Simstack 

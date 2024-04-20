@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/joshua/c/Stack.c" "CMakeFiles/Stack.dir/Stack.c.o" "gcc" "CMakeFiles/Stack.dir/Stack.c.o.d"
+  "/home/joshua/data_structures/Stack.c" "CMakeFiles/Stack.dir/Stack.c.o" "gcc" "CMakeFiles/Stack.dir/Stack.c.o.d"
   )
 
 # Targets to which this target links.

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/joshua/c/Brackets.c" "CMakeFiles/Brackets.dir/Brackets.c.o" "gcc" "CMakeFiles/Brackets.dir/Brackets.c.o.d"
+  "/home/joshua/data_structures/Brackets.c" "CMakeFiles/Brackets.dir/Brackets.c.o" "gcc" "CMakeFiles/Brackets.dir/Brackets.c.o.d"
   )
 
 # Targets to which this target links.

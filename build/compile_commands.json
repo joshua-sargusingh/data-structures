@@ -1,62 +1,57 @@
 [
 {
-  "directory": "/home/joshua/c/build",
-  "command": "/usr/bin/cc    -o CMakeFiles/Dicecup.dir/Dicecup.c.o -c /home/joshua/c/Dicecup.c",
-  "file": "/home/joshua/c/Dicecup.c"
+  "directory": "/home/joshua/data_structures/build",
+  "command": "/usr/bin/cc    -o CMakeFiles/Linkedlist.dir/Linkedlist.c.o -c /home/joshua/data_structures/Linkedlist.c",
+  "file": "/home/joshua/data_structures/Linkedlist.c"
 },
 {
-  "directory": "/home/joshua/c/build",
-  "command": "/usr/bin/cc    -o CMakeFiles/Codingninjas.dir/Codingninjas.c.o -c /home/joshua/c/Codingninjas.c",
-  "file": "/home/joshua/c/Codingninjas.c"
+  "directory": "/home/joshua/data_structures/build",
+  "command": "/usr/bin/cc    -o CMakeFiles/Remove2.dir/Remove2.c.o -c /home/joshua/data_structures/Remove2.c",
+  "file": "/home/joshua/data_structures/Remove2.c"
 },
 {
-  "directory": "/home/joshua/c/build",
-  "command": "/usr/bin/cc    -o CMakeFiles/Linkedlist.dir/Linkedlist.c.o -c /home/joshua/c/Linkedlist.c",
-  "file": "/home/joshua/c/Linkedlist.c"
+  "directory": "/home/joshua/data_structures/build",
+  "command": "/usr/bin/cc    -o CMakeFiles/Stack.dir/Stack.c.o -c /home/joshua/data_structures/Stack.c",
+  "file": "/home/joshua/data_structures/Stack.c"
 },
 {
-  "directory": "/home/joshua/c/build",
-  "command": "/usr/bin/cc    -o CMakeFiles/Remove2.dir/Remove2.c.o -c /home/joshua/c/Remove2.c",
-  "file": "/home/joshua/c/Remove2.c"
+  "directory": "/home/joshua/data_structures/build",
+  "command": "/usr/bin/cc    -o CMakeFiles/Brackets.dir/Brackets.c.o -c /home/joshua/data_structures/Brackets.c",
+  "file": "/home/joshua/data_structures/Brackets.c"
 },
 {
-  "directory": "/home/joshua/c/build",
-  "command": "/usr/bin/cc    -o CMakeFiles/Stack.dir/Stack.c.o -c /home/joshua/c/Stack.c",
-  "file": "/home/joshua/c/Stack.c"
+  "directory": "/home/joshua/data_structures/build",
+  "command": "/usr/bin/cc    -o CMakeFiles/Queue.dir/Queue.c.o -c /home/joshua/data_structures/Queue.c",
+  "file": "/home/joshua/data_structures/Queue.c"
 },
 {
-  "directory": "/home/joshua/c/build",
-  "command": "/usr/bin/cc    -o CMakeFiles/Brackets.dir/Brackets.c.o -c /home/joshua/c/Brackets.c",
-  "file": "/home/joshua/c/Brackets.c"
+  "directory": "/home/joshua/data_structures/build",
+  "command": "/usr/bin/cc    -o CMakeFiles/Tickets.dir/Tickets.c.o -c /home/joshua/data_structures/Tickets.c",
+  "file": "/home/joshua/data_structures/Tickets.c"
 },
 {
-  "directory": "/home/joshua/c/build",
-  "command": "/usr/bin/cc    -o CMakeFiles/Queue.dir/Queue.c.o -c /home/joshua/c/Queue.c",
-  "file": "/home/joshua/c/Queue.c"
+  "directory": "/home/joshua/data_structures/build",
+  "command": "/usr/bin/cc    -o CMakeFiles/Bintree.dir/Bintree.c.o -c /home/joshua/data_structures/Bintree.c",
+  "file": "/home/joshua/data_structures/Bintree.c"
 },
 {
-  "directory": "/home/joshua/c/build",
-  "command": "/usr/bin/cc    -o CMakeFiles/Bintree.dir/Bintree.c.o -c /home/joshua/c/Bintree.c",
-  "file": "/home/joshua/c/Bintree.c"
+  "directory": "/home/joshua/data_structures/build",
+  "command": "/usr/bin/cc    -o CMakeFiles/treeSum.dir/treeSum.c.o -c /home/joshua/data_structures/treeSum.c",
+  "file": "/home/joshua/data_structures/treeSum.c"
 },
 {
-  "directory": "/home/joshua/c/build",
-  "command": "/usr/bin/cc    -o CMakeFiles/treeSum.dir/treeSum.c.o -c /home/joshua/c/treeSum.c",
-  "file": "/home/joshua/c/treeSum.c"
+  "directory": "/home/joshua/data_structures/build",
+  "command": "/usr/bin/cc    -o CMakeFiles/Heaptree.dir/Heaptree.c.o -c /home/joshua/data_structures/Heaptree.c",
+  "file": "/home/joshua/data_structures/Heaptree.c"
 },
 {
-  "directory": "/home/joshua/c/build",
-  "command": "/usr/bin/cc    -o CMakeFiles/Heaptree.dir/Heaptree.c.o -c /home/joshua/c/Heaptree.c",
-  "file": "/home/joshua/c/Heaptree.c"
+  "directory": "/home/joshua/data_structures/build",
+  "command": "/usr/bin/cc    -o CMakeFiles/Heapsort.dir/Heapsort.c.o -c /home/joshua/data_structures/Heapsort.c",
+  "file": "/home/joshua/data_structures/Heapsort.c"
 },
 {
-  "directory": "/home/joshua/c/build",
-  "command": "/usr/bin/cc    -o CMakeFiles/Heapsort.dir/Heapsort.c.o -c /home/joshua/c/Heapsort.c",
-  "file": "/home/joshua/c/Heapsort.c"
-},
-{
-  "directory": "/home/joshua/c/build",
-  "command": "/usr/bin/cc    -o CMakeFiles/Hash.dir/Hash.c.o -c /home/joshua/c/Hash.c",
-  "file": "/home/joshua/c/Hash.c"
+  "directory": "/home/joshua/data_structures/build",
+  "command": "/usr/bin/cc    -o CMakeFiles/Hash.dir/Hash.c.o -c /home/joshua/data_structures/Hash.c",
+  "file": "/home/joshua/data_structures/Hash.c"
 }
 ]

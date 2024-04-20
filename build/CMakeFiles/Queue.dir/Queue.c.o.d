@@ -1,4 +1,4 @@
-CMakeFiles/Queue.dir/Queue.c.o: /home/joshua/c/Queue.c \
+CMakeFiles/Queue.dir/Queue.c.o: /home/joshua/data_structures/Queue.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

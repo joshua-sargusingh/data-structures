@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/joshua/c/Heapsort.c" "CMakeFiles/Heapsort.dir/Heapsort.c.o" "gcc" "CMakeFiles/Heapsort.dir/Heapsort.c.o.d"
+  "/home/joshua/data_structures/Heapsort.c" "CMakeFiles/Heapsort.dir/Heapsort.c.o" "gcc" "CMakeFiles/Heapsort.dir/Heapsort.c.o.d"
   )
 
 # Targets to which this target links.

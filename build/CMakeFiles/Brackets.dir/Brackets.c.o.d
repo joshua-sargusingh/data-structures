@@ -1,5 +1,6 @@
-CMakeFiles/Brackets.dir/Brackets.c.o: /home/joshua/c/Brackets.c \
- /usr/include/stdc-predef.h /usr/include/stdio.h \
+CMakeFiles/Brackets.dir/Brackets.c.o: \
+ /home/joshua/data_structures/Brackets.c /usr/include/stdc-predef.h \
+ /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/joshua/c/treeSum.c" "CMakeFiles/treeSum.dir/treeSum.c.o" "gcc" "CMakeFiles/treeSum.dir/treeSum.c.o.d"
+  "/home/joshua/data_structures/treeSum.c" "CMakeFiles/treeSum.dir/treeSum.c.o" "gcc" "CMakeFiles/treeSum.dir/treeSum.c.o.d"
   )
 
 # Targets to which this target links.

@@ -54,22 +54,21 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joshua/c
+CMAKE_SOURCE_DIR = /home/joshua/data_structures
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joshua/c/build
+CMAKE_BINARY_DIR = /home/joshua/data_structures/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Dicecup.dir/all
-all: CMakeFiles/Codingninjas.dir/all
 all: CMakeFiles/Linkedlist.dir/all
 all: CMakeFiles/Remove2.dir/all
 all: CMakeFiles/Stack.dir/all
 all: CMakeFiles/Brackets.dir/all
 all: CMakeFiles/Queue.dir/all
+all: CMakeFiles/Tickets.dir/all
 all: CMakeFiles/Bintree.dir/all
 all: CMakeFiles/treeSum.dir/all
 all: CMakeFiles/Heaptree.dir/all
@@ -82,13 +81,12 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Dicecup.dir/clean
-clean: CMakeFiles/Codingninjas.dir/clean
 clean: CMakeFiles/Linkedlist.dir/clean
 clean: CMakeFiles/Remove2.dir/clean
 clean: CMakeFiles/Stack.dir/clean
 clean: CMakeFiles/Brackets.dir/clean
 clean: CMakeFiles/Queue.dir/clean
+clean: CMakeFiles/Tickets.dir/clean
 clean: CMakeFiles/Bintree.dir/clean
 clean: CMakeFiles/treeSum.dir/clean
 clean: CMakeFiles/Heaptree.dir/clean
@@ -97,72 +95,20 @@ clean: CMakeFiles/Hash.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Dicecup.dir
-
-# All Build rule for target.
-CMakeFiles/Dicecup.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dicecup.dir/build.make CMakeFiles/Dicecup.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dicecup.dir/build.make CMakeFiles/Dicecup.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/c/build/CMakeFiles --progress-num=7,8 "Built target Dicecup"
-.PHONY : CMakeFiles/Dicecup.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/Dicecup.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Dicecup.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 0
-.PHONY : CMakeFiles/Dicecup.dir/rule
-
-# Convenience name for target.
-Dicecup: CMakeFiles/Dicecup.dir/rule
-.PHONY : Dicecup
-
-# clean rule for target.
-CMakeFiles/Dicecup.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dicecup.dir/build.make CMakeFiles/Dicecup.dir/clean
-.PHONY : CMakeFiles/Dicecup.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/Codingninjas.dir
-
-# All Build rule for target.
-CMakeFiles/Codingninjas.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codingninjas.dir/build.make CMakeFiles/Codingninjas.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codingninjas.dir/build.make CMakeFiles/Codingninjas.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/c/build/CMakeFiles --progress-num=5,6 "Built target Codingninjas"
-.PHONY : CMakeFiles/Codingninjas.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/Codingninjas.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Codingninjas.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 0
-.PHONY : CMakeFiles/Codingninjas.dir/rule
-
-# Convenience name for target.
-Codingninjas: CMakeFiles/Codingninjas.dir/rule
-.PHONY : Codingninjas
-
-# clean rule for target.
-CMakeFiles/Codingninjas.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codingninjas.dir/build.make CMakeFiles/Codingninjas.dir/clean
-.PHONY : CMakeFiles/Codingninjas.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/Linkedlist.dir
 
 # All Build rule for target.
 CMakeFiles/Linkedlist.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linkedlist.dir/build.make CMakeFiles/Linkedlist.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linkedlist.dir/build.make CMakeFiles/Linkedlist.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/c/build/CMakeFiles --progress-num=15,16 "Built target Linkedlist"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/data_structures/build/CMakeFiles --progress-num=11,12 "Built target Linkedlist"
 .PHONY : CMakeFiles/Linkedlist.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Linkedlist.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Linkedlist.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 0
 .PHONY : CMakeFiles/Linkedlist.dir/rule
 
 # Convenience name for target.
@@ -181,14 +127,14 @@ CMakeFiles/Linkedlist.dir/clean:
 CMakeFiles/Remove2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Remove2.dir/build.make CMakeFiles/Remove2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Remove2.dir/build.make CMakeFiles/Remove2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/c/build/CMakeFiles --progress-num=19,20 "Built target Remove2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/data_structures/build/CMakeFiles --progress-num=15,16 "Built target Remove2"
 .PHONY : CMakeFiles/Remove2.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Remove2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Remove2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 0
 .PHONY : CMakeFiles/Remove2.dir/rule
 
 # Convenience name for target.
@@ -207,14 +153,14 @@ CMakeFiles/Remove2.dir/clean:
 CMakeFiles/Stack.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Stack.dir/build.make CMakeFiles/Stack.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Stack.dir/build.make CMakeFiles/Stack.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/c/build/CMakeFiles --progress-num=21,22 "Built target Stack"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/data_structures/build/CMakeFiles --progress-num=17,18 "Built target Stack"
 .PHONY : CMakeFiles/Stack.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Stack.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Stack.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 0
 .PHONY : CMakeFiles/Stack.dir/rule
 
 # Convenience name for target.
@@ -233,14 +179,14 @@ CMakeFiles/Stack.dir/clean:
 CMakeFiles/Brackets.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brackets.dir/build.make CMakeFiles/Brackets.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brackets.dir/build.make CMakeFiles/Brackets.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/c/build/CMakeFiles --progress-num=3,4 "Built target Brackets"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/data_structures/build/CMakeFiles --progress-num=3,4 "Built target Brackets"
 .PHONY : CMakeFiles/Brackets.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Brackets.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Brackets.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 0
 .PHONY : CMakeFiles/Brackets.dir/rule
 
 # Convenience name for target.
@@ -259,14 +205,14 @@ CMakeFiles/Brackets.dir/clean:
 CMakeFiles/Queue.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Queue.dir/build.make CMakeFiles/Queue.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Queue.dir/build.make CMakeFiles/Queue.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/c/build/CMakeFiles --progress-num=17,18 "Built target Queue"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/data_structures/build/CMakeFiles --progress-num=13,14 "Built target Queue"
 .PHONY : CMakeFiles/Queue.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Queue.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Queue.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 0
 .PHONY : CMakeFiles/Queue.dir/rule
 
 # Convenience name for target.
@@ -279,20 +225,46 @@ CMakeFiles/Queue.dir/clean:
 .PHONY : CMakeFiles/Queue.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/Tickets.dir
+
+# All Build rule for target.
+CMakeFiles/Tickets.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tickets.dir/build.make CMakeFiles/Tickets.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tickets.dir/build.make CMakeFiles/Tickets.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/data_structures/build/CMakeFiles --progress-num=19,20 "Built target Tickets"
+.PHONY : CMakeFiles/Tickets.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Tickets.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Tickets.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 0
+.PHONY : CMakeFiles/Tickets.dir/rule
+
+# Convenience name for target.
+Tickets: CMakeFiles/Tickets.dir/rule
+.PHONY : Tickets
+
+# clean rule for target.
+CMakeFiles/Tickets.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tickets.dir/build.make CMakeFiles/Tickets.dir/clean
+.PHONY : CMakeFiles/Tickets.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/Bintree.dir
 
 # All Build rule for target.
 CMakeFiles/Bintree.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bintree.dir/build.make CMakeFiles/Bintree.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bintree.dir/build.make CMakeFiles/Bintree.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/c/build/CMakeFiles --progress-num=1,2 "Built target Bintree"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/data_structures/build/CMakeFiles --progress-num=1,2 "Built target Bintree"
 .PHONY : CMakeFiles/Bintree.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Bintree.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Bintree.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 0
 .PHONY : CMakeFiles/Bintree.dir/rule
 
 # Convenience name for target.
@@ -311,14 +283,14 @@ CMakeFiles/Bintree.dir/clean:
 CMakeFiles/treeSum.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/treeSum.dir/build.make CMakeFiles/treeSum.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/treeSum.dir/build.make CMakeFiles/treeSum.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/c/build/CMakeFiles --progress-num=23,24 "Built target treeSum"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/data_structures/build/CMakeFiles --progress-num=21,22 "Built target treeSum"
 .PHONY : CMakeFiles/treeSum.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/treeSum.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/treeSum.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 0
 .PHONY : CMakeFiles/treeSum.dir/rule
 
 # Convenience name for target.
@@ -337,14 +309,14 @@ CMakeFiles/treeSum.dir/clean:
 CMakeFiles/Heaptree.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Heaptree.dir/build.make CMakeFiles/Heaptree.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Heaptree.dir/build.make CMakeFiles/Heaptree.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/c/build/CMakeFiles --progress-num=13,14 "Built target Heaptree"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/data_structures/build/CMakeFiles --progress-num=9,10 "Built target Heaptree"
 .PHONY : CMakeFiles/Heaptree.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Heaptree.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Heaptree.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 0
 .PHONY : CMakeFiles/Heaptree.dir/rule
 
 # Convenience name for target.
@@ -363,14 +335,14 @@ CMakeFiles/Heaptree.dir/clean:
 CMakeFiles/Heapsort.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Heapsort.dir/build.make CMakeFiles/Heapsort.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Heapsort.dir/build.make CMakeFiles/Heapsort.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/c/build/CMakeFiles --progress-num=11,12 "Built target Heapsort"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/data_structures/build/CMakeFiles --progress-num=7,8 "Built target Heapsort"
 .PHONY : CMakeFiles/Heapsort.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Heapsort.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Heapsort.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 0
 .PHONY : CMakeFiles/Heapsort.dir/rule
 
 # Convenience name for target.
@@ -389,14 +361,14 @@ CMakeFiles/Heapsort.dir/clean:
 CMakeFiles/Hash.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Hash.dir/build.make CMakeFiles/Hash.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Hash.dir/build.make CMakeFiles/Hash.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/c/build/CMakeFiles --progress-num=9,10 "Built target Hash"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joshua/data_structures/build/CMakeFiles --progress-num=5,6 "Built target Hash"
 .PHONY : CMakeFiles/Hash.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Hash.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Hash.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 0
 .PHONY : CMakeFiles/Hash.dir/rule
 
 # Convenience name for target.

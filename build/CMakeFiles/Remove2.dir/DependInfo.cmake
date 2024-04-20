@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/joshua/c/Remove2.c" "CMakeFiles/Remove2.dir/Remove2.c.o" "gcc" "CMakeFiles/Remove2.dir/Remove2.c.o.d"
+  "/home/joshua/data_structures/Remove2.c" "CMakeFiles/Remove2.dir/Remove2.c.o" "gcc" "CMakeFiles/Remove2.dir/Remove2.c.o.d"
   )
 
 # Targets to which this target links.

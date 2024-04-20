@@ -1,98 +1,87 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//define DS
-struct Node {
+//define ds
+struct node {
     int data;
-    struct Node* next;
+    struct node* next;
 };
 
-//newNode Creation
-//struct Node* is a pointer of Node ds
-struct Node* createNode(int data) {
-    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+//struct node* is a pointer to a node ds
+struct node* node_create(const int data) {
+
+    struct node* node_new = (struct node*)malloc(sizeof(struct node));
+
     //error check
-    if (newNode == NULL) {
-        printf("no memory room\n");
+    if (node_new == NULL) {
+        printf("memory allocation error");
         exit(1);
     }
-    //assign
-    newNode->data = data;
-    newNode->next = NULL;
-    //return
-    return newNode;
-};
 
-//insert Node at beginning of linked list
-void insertatBeg(struct Node** headref, int data) {
-    struct Node* newNode =  createNode(data);
-    //reassign next
-    //Here, the next pointer of the newly created node (newNode) is set to point to the current first node in the linked list, which is pointed to by *headref
-    newNode->next=*headref;
-    //change headref
-    *headref = newNode;
+    //assign
+    node_new->data = data;
+    node_new->next = NULL;
+
+    return node_new;
 }
 
-/*
-void insertAtEnd(struct Node** headref, int data) {
-    struct Node* newNode = createNode(data);
-    struct Node* current = *headref;
+void node_insert_beg(struct node** head, const int data) {
 
-    // If the list is empty, make the new node the head
-    if (*headref == NULL) {
-        *headref = newNode;
-        return;
-    }
+    struct node* node = node_create(data);
 
-    // Traverse to the last node
+    node->next = *head; //reassign next
+    *head = node; //change head
+}
+
+void node_insert_end(struct node** head, const int data) {
+
+    struct node* node = node_create(data);
+    struct node* current = *head;
+
     while (current->next != NULL) {
         current = current->next;
     }
 
-    // Link the new node at the end of the list
-    current->next = newNode;
+    current->next = node;
 }
-*/
 
-void printRev(struct Node* head) {
+void node_print(struct node** head) {
 
-    //return if nothing
-    if (head == NULL) {
-        return;
+    struct node* current = *head;
+
+    while (current != NULL) {
+        printf("%d ",current->data);
+        current = current->next;
     }
 
-    //recursive
-    printRev(head->next);
+    printf("\n");
+}
+
+void node_free_all(struct node** head) {
+
+    struct node* current = *head;
     
-    printf("%d ", head->data);
-
-    /*while (head != NULL) {
-        printf("%d ", head->data);
-        head = head->next;
+    while (current->next != NULL) {
+        struct node* temp = current;
+        current = current->next;
+        free(temp);
     }
-
-    printf("\n");*/
 }
 
-int main () {
+int main() {
 
     //initialize empty linked list
-    struct Node* head = NULL;
+    struct node* head = NULL;
+
     int num;
+    printf("Enter data to store in linked list (-1 to quit):\n");
 
-    while (1) {
-
-        scanf("%d", &num);
-
-        if (num == -1) {
-            break;
-        }
-        
-        insertatBeg(&head, num);
+    while (scanf("%d",&num) == 1 && num != -1) {
+        node_insert_beg(&head, num);
     }
 
-    printRev(head);
-    printf("\n");
+    node_print(&head);
+    node_free_all(&head);
     
     return 0;
 }

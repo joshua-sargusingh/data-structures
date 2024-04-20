@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/Dicecup.dir/Dicecup.c.o -o Dicecup 

@@ -55,7 +55,7 @@ int hash(char *key, int size) {
     const int c = 31;
 
     //iterate through word to create hash
-    while (*key != '/0') {
+    while (*key != '\0') {
         //replace old hash value with new one from ASCII key
         hashValue = (hashValue * c) + *key;
         key++;

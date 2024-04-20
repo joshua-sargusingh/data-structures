@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/joshua/c/Hash.c" "CMakeFiles/Hash.dir/Hash.c.o" "gcc" "CMakeFiles/Hash.dir/Hash.c.o.d"
+  "/home/joshua/data_structures/Hash.c" "CMakeFiles/Hash.dir/Hash.c.o" "gcc" "CMakeFiles/Hash.dir/Hash.c.o.d"
   )
 
 # Targets to which this target links.

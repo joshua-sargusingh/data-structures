@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joshua/c
+CMAKE_SOURCE_DIR = /home/joshua/data_structures
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joshua/c/build
+CMAKE_BINARY_DIR = /home/joshua/data_structures/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles /home/joshua/c/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles /home/joshua/data_structures/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/c/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joshua/data_structures/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -115,32 +115,6 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named Dicecup
-
-# Build rule for target.
-Dicecup: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Dicecup
-.PHONY : Dicecup
-
-# fast build rule for target.
-Dicecup/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dicecup.dir/build.make CMakeFiles/Dicecup.dir/build
-.PHONY : Dicecup/fast
-
-#=============================================================================
-# Target rules for targets named Codingninjas
-
-# Build rule for target.
-Codingninjas: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Codingninjas
-.PHONY : Codingninjas
-
-# fast build rule for target.
-Codingninjas/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codingninjas.dir/build.make CMakeFiles/Codingninjas.dir/build
-.PHONY : Codingninjas/fast
 
 #=============================================================================
 # Target rules for targets named Linkedlist
@@ -206,6 +180,19 @@ Queue: cmake_check_build_system
 Queue/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Queue.dir/build.make CMakeFiles/Queue.dir/build
 .PHONY : Queue/fast
+
+#=============================================================================
+# Target rules for targets named Tickets
+
+# Build rule for target.
+Tickets: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Tickets
+.PHONY : Tickets
+
+# fast build rule for target.
+Tickets/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tickets.dir/build.make CMakeFiles/Tickets.dir/build
+.PHONY : Tickets/fast
 
 #=============================================================================
 # Target rules for targets named Bintree
@@ -319,54 +306,6 @@ Brackets.s: Brackets.c.s
 Brackets.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brackets.dir/build.make CMakeFiles/Brackets.dir/Brackets.c.s
 .PHONY : Brackets.c.s
-
-Codingninjas.o: Codingninjas.c.o
-.PHONY : Codingninjas.o
-
-# target to build an object file
-Codingninjas.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codingninjas.dir/build.make CMakeFiles/Codingninjas.dir/Codingninjas.c.o
-.PHONY : Codingninjas.c.o
-
-Codingninjas.i: Codingninjas.c.i
-.PHONY : Codingninjas.i
-
-# target to preprocess a source file
-Codingninjas.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codingninjas.dir/build.make CMakeFiles/Codingninjas.dir/Codingninjas.c.i
-.PHONY : Codingninjas.c.i
-
-Codingninjas.s: Codingninjas.c.s
-.PHONY : Codingninjas.s
-
-# target to generate assembly for a file
-Codingninjas.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Codingninjas.dir/build.make CMakeFiles/Codingninjas.dir/Codingninjas.c.s
-.PHONY : Codingninjas.c.s
-
-Dicecup.o: Dicecup.c.o
-.PHONY : Dicecup.o
-
-# target to build an object file
-Dicecup.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dicecup.dir/build.make CMakeFiles/Dicecup.dir/Dicecup.c.o
-.PHONY : Dicecup.c.o
-
-Dicecup.i: Dicecup.c.i
-.PHONY : Dicecup.i
-
-# target to preprocess a source file
-Dicecup.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dicecup.dir/build.make CMakeFiles/Dicecup.dir/Dicecup.c.i
-.PHONY : Dicecup.c.i
-
-Dicecup.s: Dicecup.c.s
-.PHONY : Dicecup.s
-
-# target to generate assembly for a file
-Dicecup.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Dicecup.dir/build.make CMakeFiles/Dicecup.dir/Dicecup.c.s
-.PHONY : Dicecup.c.s
 
 Hash.o: Hash.c.o
 .PHONY : Hash.o
@@ -536,6 +475,30 @@ Stack.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Stack.dir/build.make CMakeFiles/Stack.dir/Stack.c.s
 .PHONY : Stack.c.s
 
+Tickets.o: Tickets.c.o
+.PHONY : Tickets.o
+
+# target to build an object file
+Tickets.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tickets.dir/build.make CMakeFiles/Tickets.dir/Tickets.c.o
+.PHONY : Tickets.c.o
+
+Tickets.i: Tickets.c.i
+.PHONY : Tickets.i
+
+# target to preprocess a source file
+Tickets.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tickets.dir/build.make CMakeFiles/Tickets.dir/Tickets.c.i
+.PHONY : Tickets.c.i
+
+Tickets.s: Tickets.c.s
+.PHONY : Tickets.s
+
+# target to generate assembly for a file
+Tickets.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tickets.dir/build.make CMakeFiles/Tickets.dir/Tickets.c.s
+.PHONY : Tickets.c.s
+
 treeSum.o: treeSum.c.o
 .PHONY : treeSum.o
 
@@ -570,8 +533,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Bintree"
 	@echo "... Brackets"
-	@echo "... Codingninjas"
-	@echo "... Dicecup"
 	@echo "... Hash"
 	@echo "... Heapsort"
 	@echo "... Heaptree"
@@ -579,6 +540,7 @@ help:
 	@echo "... Queue"
 	@echo "... Remove2"
 	@echo "... Stack"
+	@echo "... Tickets"
 	@echo "... treeSum"
 	@echo "... Bintree.o"
 	@echo "... Bintree.i"
@@ -586,12 +548,6 @@ help:
 	@echo "... Brackets.o"
 	@echo "... Brackets.i"
 	@echo "... Brackets.s"
-	@echo "... Codingninjas.o"
-	@echo "... Codingninjas.i"
-	@echo "... Codingninjas.s"
-	@echo "... Dicecup.o"
-	@echo "... Dicecup.i"
-	@echo "... Dicecup.s"
 	@echo "... Hash.o"
 	@echo "... Hash.i"
 	@echo "... Hash.s"
@@ -613,6 +569,9 @@ help:
 	@echo "... Stack.o"
 	@echo "... Stack.i"
 	@echo "... Stack.s"
+	@echo "... Tickets.o"
+	@echo "... Tickets.i"
+	@echo "... Tickets.s"
 	@echo "... treeSum.o"
 	@echo "... treeSum.i"
 	@echo "... treeSum.s"

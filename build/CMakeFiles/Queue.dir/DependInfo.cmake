@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/joshua/c/Queue.c" "CMakeFiles/Queue.dir/Queue.c.o" "gcc" "CMakeFiles/Queue.dir/Queue.c.o.d"
+  "/home/joshua/data_structures/Queue.c" "CMakeFiles/Queue.dir/Queue.c.o" "gcc" "CMakeFiles/Queue.dir/Queue.c.o.d"
   )
 
 # Targets to which this target links.
